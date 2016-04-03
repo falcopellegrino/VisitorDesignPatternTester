@@ -41,22 +41,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyCode\Element.cs" />
+    <Compile Include="MyCode\Element.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="MyCode\ElementPaziente.cs" />
+    <Compile Include="MyCode\ObjectStructurePazienti.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="MyCode\VisitorGastrologo.cs" />
     <Compile Include="MyCode\VisitorNeurologo.cs" />
     <Compile Include="MyCode\VisitorOrtopedico.cs" />
-    <Compile Include="MyCode\ObjectStructurePazienti.cs" />
     <Compile Include="MyCode\IVisitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RealWorldCode\Employee.cs" />
-    <Compile Include="RealWorldCode\EmplyeeTypes.cs" />
-    <Compile Include="RealWorldCode\IncomeVisitor.cs" />
-    <Compile Include="RealWorldCode\VacationVisitor.cs" />
     <Compile Include="RealWorldCode\Element.cs" />
     <Compile Include="RealWorldCode\Employees.cs" />
+    <Compile Include="RealWorldCode\EmplyeeTypes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RealWorldCode\IncomeVisitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="RealWorldCode\IVisitor.cs" />
+    <Compile Include="RealWorldCode\VacationVisitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StructuralCode\ConcreteElement1.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="StructuralCode\ConcreteElement2.cs" />
     <Compile Include="StructuralCode\ConcreteVisitor1.cs">
       <SubType>Code</SubType>
@@ -64,10 +77,15 @@
     <Compile Include="StructuralCode\ConcreteVisitor2.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="StructuralCode\ConcreteElement1.cs" />
-    <Compile Include="StructuralCode\Element.cs" />
-    <Compile Include="StructuralCode\ObjectStructure.cs" />
-    <Compile Include="StructuralCode\Visitor.cs" />
+    <Compile Include="StructuralCode\Element.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StructuralCode\ObjectStructure.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StructuralCode\Visitor.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
