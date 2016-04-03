@@ -43,9 +43,30 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RealWorldCode\Employee.cs" />
+    <Compile Include="RealWorldCode\EmplyeeTypes.cs" />
+    <Compile Include="RealWorldCode\IncomeVisitor.cs" />
+    <Compile Include="RealWorldCode\VacationVisitor.cs" />
+    <Compile Include="RealWorldCode\Element.cs" />
+    <Compile Include="RealWorldCode\Emplyees.cs" />
+    <Compile Include="RealWorldCode\IVisitor.cs" />
+    <Compile Include="StructuralCode\ConcreteElement2.cs" />
+    <Compile Include="StructuralCode\ConcreteVisitor1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StructuralCode\ConcreteVisitor2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StructuralCode\ConcreteElement1.cs" />
+    <Compile Include="StructuralCode\Element.cs" />
+    <Compile Include="StructuralCode\ObjectStructure.cs" />
+    <Compile Include="StructuralCode\Visitor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyCode\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
