@@ -41,6 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyCode\Element.cs" />
+    <Compile Include="MyCode\ElementPaziente.cs" />
+    <Compile Include="MyCode\VisitorGastrologo.cs" />
+    <Compile Include="MyCode\VisitorNeurologo.cs" />
+    <Compile Include="MyCode\VisitorOrtopedico.cs" />
+    <Compile Include="MyCode\ObjectStructurePazienti.cs" />
+    <Compile Include="MyCode\IVisitor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RealWorldCode\Employee.cs" />
@@ -48,7 +55,7 @@
     <Compile Include="RealWorldCode\IncomeVisitor.cs" />
     <Compile Include="RealWorldCode\VacationVisitor.cs" />
     <Compile Include="RealWorldCode\Element.cs" />
-    <Compile Include="RealWorldCode\Emplyees.cs" />
+    <Compile Include="RealWorldCode\Employees.cs" />
     <Compile Include="RealWorldCode\IVisitor.cs" />
     <Compile Include="StructuralCode\ConcreteElement2.cs" />
     <Compile Include="StructuralCode\ConcreteVisitor1.cs">
@@ -65,9 +72,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MyCode\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Structural = VisitorDesignPatternTester.StructuralCode;
 using Real = VisitorDesignPatternTester.RealWorldCode;
-//using My = VisitorDesignPatternTester.MyCode;
+using My = VisitorDesignPatternTester.MyCode;
 
 namespace VisitorDesignPatternTester
 {
@@ -91,6 +91,18 @@ namespace VisitorDesignPatternTester
             Console.WriteLine();
 
             #region My code in C#
+            My.Pazienti pazienti = new My.Pazienti();
+            pazienti.Attach(new My.Paziente("Franco", true, false, false));
+            pazienti.Attach(new My.Paziente("Mario", false, true, false));
+            pazienti.Attach(new My.Paziente("Luigi", false, false, true));
+            pazienti.Attach(new My.Paziente("Giovanni", true, true, true));
+
+            pazienti.Accept(new My.Neurologo());
+            pazienti.Accept(new My.Gastrologo());
+            pazienti.Accept(new My.Ortopedico());
+
+            // Wait for user
+            Console.ReadKey();
             #endregion
         }
     }
